@@ -392,6 +392,7 @@ header p {
 .apendix a {
   display: block;
   color: #eee;
+  padding-right: 1.5rem;
 }
 
 .apendix-title {
