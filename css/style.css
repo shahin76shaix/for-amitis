@@ -1,0 +1,409 @@
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url(ttf/Vazirmatn-Medium.ttf) format("");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url(ttf/Vazirmatn-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url(ttf/Vazirmatn-Light.ttf) format("");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url(ttf/Vazirmatn-Thin.ttf);
+  font-weight: 200;
+}
+
+.animation-1 {
+  display: block;
+  animation: moveInDown 1.5s ease-out;
+}
+
+.animation-2 {
+  display: block;
+  animation: moveInTop 1.5s ease-out 0.8s;
+  animation-fill-mode: backwards;
+}
+.animation-3 {
+  display: block;
+  margin-top: 5rem;
+  text-decoration: none;
+  padding: 0.5rem 2.5rem;
+  border-radius: 10rem;
+  background-color: #fff;
+  animation: moveIn 1s ease-out 1.6s;
+  animation-fill-mode: backwards;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin-right: 1rem;
+  list-style: none;
+  color: #1f1f1f;
+  font-size: 0.9rem;
+}
+
+h1,
+h2 {
+  color: #ffde21;
+  border-bottom: 2px solid #ffde21;
+  padding: 0 2rem 0.8rem 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h3,
+h4 {
+  color: rgba(16, 0, 236, 0.986);
+}
+
+.heading-secondary {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.heading-tertiary {
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 1.85rem;
+  padding-right: 1rem;
+  padding-left: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin: 1rem auto;
+  border-bottom: 1px solid rgba(12, 0, 177, 0.863);
+}
+
+.heading-fourth {
+  margin: 1rem 0;
+}
+
+.normal-text {
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.7rem;
+  text-align: right;
+  color: #1f1f1f;
+}
+
+header {
+  font-size: 1rem;
+  height: 99vh;
+  background-image: linear-gradient(
+      200deg,
+      rgba(12, 0, 177, 0.863),
+      rgba(3, 197, 123, 0.5)
+    ),
+    url(../asset/image/working-office2.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding: 0 1rem;
+  margin-bottom: 0.3rem;
+}
+
+main {
+  background-color: rgb(254, 255, 240);
+}
+
+section {
+  padding-bottom: 1.7rem;
+}
+.wrapper {
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper p {
+  font-size: 0.9rem;
+  padding: 2.1rem;
+  text-align: center;
+  background-color: #000000cc;
+  margin-top: 1.2rem;
+  border-radius: 4px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+}
+
+header p {
+  font-size: 0.9rem;
+  padding: 2.1rem;
+  text-align: center;
+  background-color: #000000cc;
+  margin-top: 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0.4rem 1.2rem 1rem #2effcb73;
+}
+
+.problem div {
+  height: 55vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/problem-solving.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.solution div {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/solution.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.main-features div {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/drm.jpg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.potentials div {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/business1.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.information div {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/e-learning.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.final div {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/business3.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: left;
+}
+
+.our-service .wrapper {
+  height: 50vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/business2.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.content-production .wrapper {
+  height: 80vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/strategy.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.conclusion .wrapper {
+  height: 67vh;
+  padding: 5rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+      220deg,
+      rgba(23, 7, 241, 0.904),
+      rgba(25, 209, 255, 0.61)
+    ),
+    url(../asset/image/business-back.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.heading-third-third {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.normal-text-important {
+  color: #1f1f1f;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.b-advantages__slogan--text {
+  color: #1f1f1f;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.apendix {
+  background-color: rgba(12, 0, 177, 0.863);
+}
+.apendix a {
+  display: block;
+  color: #eee;
+}
+
+.apendix-title {
+  display: block;
+  color: #eee;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.normal-text-ending {
+  padding: 2rem 1rem;
+  color: #222;
+  text-align: left;
+}
